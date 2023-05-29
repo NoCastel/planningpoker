@@ -1,0 +1,53 @@
+-- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
+--
+-- Host: localhost    Database: planningpoker
+-- ------------------------------------------------------
+-- Server version	8.0.30
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `user`
+--
+
+DROP TABLE IF EXISTS `user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `user` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(45) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(512) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user`
+--
+
+LOCK TABLES `user` WRITE;
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES (1,'AidasZ','aidas@gmail.com','43b57d08acff6ec89951cb0c818fbea1e907a5f1dfdade7ec6849e7b8af1248ce33763aa2302aebe37f184f3829414d9a1e10ec23667c5dc2fe6a281e1b59f8f'),(2,'RobertL','robert@gmail.com','f97d847827f6b82a31469ba97619b583f9cb79382e9a72013d70d9f4df8403fbe1a6de81878accdf45cafd90692cda8b8a5cf27bee61d9de2552f70836457091'),(3,'ErtaS','erta@gmail.com','fe7c3de66640b4b4a2af8d783dc2f7fec2800e7dd26fc234a03db9d875dee393a3ab33586bc2911209685b7c8c26c13f0fb0171ba1889a539d025b0207f1ecd2'),(4,'TadasP','tadas@gmail.com','858561609a80ce237062291bc7f4373d12769cfe26045338324f707e897ab4c6a46b840d4aa1110619d2bc0ca7750a8f11793ad7c5ded4d55c6114d25b16f892'),(5,'MariusM','marius@gmail.com','b224104fde98bada64ac227a715aabeaeefe848b9d0e7d9a77acd61c1f200f926dced4a758d180487c7652ba85a011ec71cb068fca99431b276ebece825e544c'),(6,'GediminasZ','gediminas@gmail.com','383e3e8dd920d278fd2174417fa3e9cadbeea63b8bb18f44b003012bcffccc0e053c0ee356c6c6f4e212f5e0255db0299590c3db4f55d582c0bc8dff269e339d'),(7,'SauliusK','saulius@gmail.com','cd793f87517c6ed5f62be68cfaf42156ad6e00da714c3376d5b6a2c4617dbc0fb558071d59e5bc23f8d72ae982c9b0e474a517ee588eda10d142eb0fcd410b1a'),(8,'SaulėV','saule@gmail.com','3e97ca508082b33cc25e799f1a49ce8c945352770cfa66ea851ff223adf9cea199d1bf05100a0df2d3d05d982eddd9927894572c5ad031a9c7895d9170196010'),(9,'HubertasE','hubertas@gmail.com','262cc060dda6d8246890a746c17fe2dbc7cee8d871efaf6855dd4f235eaf88f98e01ae53c0b9f86964173b22c10b7c8050257efc0b9b5fa424c0d55b11b2fad7'),(10,'KristinaB','kristina@gmail.com','bb5afd0e9e007288a9d4af2fcf721ed3ea0919c3c3103709045c9dd773aab800bbad0fef11797dbee4555c8697ca66bbbfc780b8ee2ee6db24f4bd17f696b671');
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-05-22 16:26:47
